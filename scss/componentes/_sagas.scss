@@ -1,0 +1,45 @@
+#sagas {
+    gap: 20px;
+    padding: 20px 20px 40px;
+    display: flex;
+    flex-wrap: map-get($flexado, flexibilidad);
+    justify-content: space-evenly;
+    .cosmere {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .disco {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .holmes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .potter {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 630px) {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 300px;
+        }
+      }
+}

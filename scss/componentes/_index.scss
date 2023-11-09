@@ -1,0 +1,105 @@
+
+main {
+
+
+    .imageLink {
+        &:hover {
+            transform: scale(1.05);
+        }
+        transition: transform 0.5s;
+    }
+
+    img {
+        border-radius: 8px;
+    }
+
+    p {
+        font-size: 22px;
+         font-family: "Montserrat", sans-serif;
+    }
+
+    .indexLibro {
+        display: flex;
+        flex-direction: map-get($flexado, direcciones);
+        gap: 50px;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: map-get($flexado, flexibilidad);
+        padding: 20px 50px 10px;
+      }
+
+      .parrafoLibro {
+        width: 800px;
+        justify-self: center;
+      }
+
+      .toCenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+
+        h2 {
+            align-self: flex-start;
+        }
+      }
+
+      .slider {
+        max-width: 415px;
+      }
+
+      @media (max-width: 470px) {
+        .slider {
+          max-width: 300px;
+        }
+      
+        .imageLink {
+          width: 250px;
+        }
+    }
+}
+
+section {
+  @include seccionIndex ($bg_ppl, 32px, 50px);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: 1fr 1fr;
+  grid-template-areas: 
+  "h2"
+  "div";
+  .animadoTexto {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: div;
+    img {
+        animation-name: upAndDown;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+    }
+    p {
+        font-family: 'Rubik', sans-serif;
+    }
+
+    @media (max-width: 992px) {
+        .animated {
+            display: none;
+        }
+    }
+  }
+
+  .titulado {
+    grid-area: h2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     h2 {
+       font-weight: bold;
+       font-size: 40px;
+     }
+  }
+}

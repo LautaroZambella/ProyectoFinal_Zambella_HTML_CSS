@@ -1,0 +1,49 @@
+#caminoReyes {
+    .infoLibro {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: map-get($flexado, flexibilidad);
+        align-items: center;
+
+        p{ 
+            width: 35%;
+        }
+      }
+
+      .generoRating {
+        display: flex;
+        flex-direction: map-get($flexado, direccion);
+        gap: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+        ul {
+            list-style-type: circle;
+            li {
+                font-weight: bold;
+            }
+        }
+      }
+
+      .imagenesLibro {
+        display: flex;
+        flex-wrap: map-get($flexado, flexibilidad);
+        gap: 10px;
+        padding: 20px;
+        justify-content: center;
+      }
+      @media(max-width: 992px)
+      {
+        .infoLibro {
+            img {
+                max-width: 500px;
+            }
+        }
+      }
+      @media(max-width: 560px)
+      {
+        img {
+            width: 300px;
+        }
+      }
+}

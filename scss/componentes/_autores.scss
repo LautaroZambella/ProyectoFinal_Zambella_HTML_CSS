@@ -1,0 +1,199 @@
+#autores {
+    .brandon img {
+        grid-area: img;
+      }
+      .brandon .info {
+        grid-area: txt;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .brandon .libros {
+        grid-area: libros;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      
+      .brandon .sagas {
+        grid-area: sagas;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      .brandon .wiki {
+        grid-area: wiki;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      
+      
+      .agatha img {
+        grid-area: img;
+      }
+      
+      .agatha .info {
+        grid-area: txt;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .agatha .libros {
+        grid-area: libros;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      
+      .agatha .sagas {
+        grid-area: sagas;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      
+      .agatha .wiki {
+        grid-area: wiki;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      
+      .robert img {
+        grid-area: img;
+      }
+      
+      .robert .info {
+        grid-area: txt;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .robert .libros {
+        grid-area: libros;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      
+      .robert .sagas {
+        grid-area: sagas;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      
+      .robert .wiki {
+        grid-area: wiki;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      
+      .juan img {
+        grid-area: img;
+      }
+      
+      .juan .info {
+        grid-area: txt;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .juan .libros {
+        grid-area: libros;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      
+      .juan .sagas {
+        grid-area: sagas;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      
+      .juan .wiki {
+        grid-area: wiki;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+    @media (min-width: 992px) {
+    .brandon,
+.agatha,
+.robert,
+.juan {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 0.8fr 0.8fr;
+  grid-template-rows: 1fr 1fr 0.3fr;
+  grid-template-areas:
+    "img txt txt txt"
+    "img quote quote quote"
+    "img libros sagas wiki";
+  gap: 10px;
+  padding: 20px;
+}
+  
+  .quote {
+    grid-area: quote;
+    font-style: italic;
+    color: #2f4f4f;
+  }
+  
+  
+}
+
+@media (max-width: 992px) {
+    .brandon,
+    .agatha,
+    .robert,
+    .juan {
+      display: grid;
+      grid-template-columns: 1.5fr 0.8fr 0.8fr;
+      grid-template-rows: 1fr 0.3fr;
+      grid-template-areas:
+        "img txt txt"
+        "libros sagas wiki";
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .quote {
+        display: none;
+    }
+    
+    img {
+        width: 400px;
+    }
+        }
+    
+        @media (max-width: 700px)
+        {
+            .brandon,
+            .agatha,
+            .robert,
+            .juan {
+                display: flex;
+                flex-wrap: map-get($flexado, flexibilidad);
+                padding: 0;
+                flex-direction: map-get($flexado, direccion);
+
+                .info {
+                    display: none;
+                }
+
+                img {
+                    width: 300px;
+                }
+            }
+
+
+        }
+
+}

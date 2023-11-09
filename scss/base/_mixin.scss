@@ -1,0 +1,5 @@
+@mixin seccionIndex ($bg, $pfs, $pd) {
+    background-color: $bg;
+    font-size: $pfs;
+    padding: $pd;
+}

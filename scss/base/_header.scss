@@ -1,0 +1,32 @@
+header {
+    background-color: #cc5803;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  a{
+    color: black;
+    border-radius: 10px;
+  }
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 992px) {
+    .nav_media {
+      display: none;
+    }
+  }
+
+  @media (max-width: 992px) {
+    ul {
+        display: none;
+    }
+  }
+}

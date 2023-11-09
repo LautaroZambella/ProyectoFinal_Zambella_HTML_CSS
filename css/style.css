@@ -1,0 +1,437 @@
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  background-color: #1f1300;
+}
+
+header {
+  background-color: #cc5803;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+}
+header a {
+  color: black;
+  border-radius: 10px;
+}
+header h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  header .nav_media {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  header ul {
+    display: none;
+  }
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+main .imageLink {
+  transition: transform 0.5s;
+}
+main .imageLink:hover {
+  transform: scale(1.05);
+}
+main img {
+  border-radius: 8px;
+}
+main p {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+main .indexLibro {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 50px 10px;
+}
+main .parrafoLibro {
+  width: 800px;
+  justify-self: center;
+}
+main .toCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+main .toCenter h2 {
+  align-self: flex-start;
+}
+main .slider {
+  max-width: 415px;
+}
+@media (max-width: 470px) {
+  main .slider {
+    max-width: 300px;
+  }
+  main .imageLink {
+    width: 250px;
+  }
+}
+
+section {
+  background-color: #ffc15e;
+  font-size: 32px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: 1fr 1fr;
+  grid-template-areas: "h2" "div";
+}
+section .animadoTexto {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: div;
+}
+section .animadoTexto img {
+  animation-name: upAndDown;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+section .animadoTexto p {
+  font-family: "Rubik", sans-serif;
+}
+@media (max-width: 992px) {
+  section .animadoTexto .animated {
+    display: none;
+  }
+}
+section .titulado {
+  grid-area: h2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .titulado h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+body p {
+  margin: 0;
+}
+body #libros div {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  body #libros div {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 450px) {
+  body #libros img {
+    width: 250px;
+  }
+}
+
+#autores .brandon img {
+  grid-area: img;
+}
+#autores .brandon .info {
+  grid-area: txt;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#autores .brandon .libros {
+  grid-area: libros;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .brandon .sagas {
+  grid-area: sagas;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .brandon .wiki {
+  grid-area: wiki;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .agatha img {
+  grid-area: img;
+}
+#autores .agatha .info {
+  grid-area: txt;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#autores .agatha .libros {
+  grid-area: libros;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .agatha .sagas {
+  grid-area: sagas;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .agatha .wiki {
+  grid-area: wiki;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .robert img {
+  grid-area: img;
+}
+#autores .robert .info {
+  grid-area: txt;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#autores .robert .libros {
+  grid-area: libros;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .robert .sagas {
+  grid-area: sagas;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .robert .wiki {
+  grid-area: wiki;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .juan img {
+  grid-area: img;
+}
+#autores .juan .info {
+  grid-area: txt;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#autores .juan .libros {
+  grid-area: libros;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .juan .sagas {
+  grid-area: sagas;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .juan .wiki {
+  grid-area: wiki;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+@media (min-width: 992px) {
+  #autores .brandon,
+  #autores .agatha,
+  #autores .robert,
+  #autores .juan {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr 0.8fr 0.8fr;
+    grid-template-rows: 1fr 1fr 0.3fr;
+    grid-template-areas: "img txt txt txt" "img quote quote quote" "img libros sagas wiki";
+    gap: 10px;
+    padding: 20px;
+  }
+  #autores .quote {
+    grid-area: quote;
+    font-style: italic;
+    color: #2f4f4f;
+  }
+}
+@media (max-width: 992px) {
+  #autores .brandon,
+  #autores .agatha,
+  #autores .robert,
+  #autores .juan {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr 0.8fr;
+    grid-template-rows: 1fr 0.3fr;
+    grid-template-areas: "img txt txt" "libros sagas wiki";
+    gap: 10px;
+    padding: 20px;
+  }
+  #autores .quote {
+    display: none;
+  }
+  #autores img {
+    width: 400px;
+  }
+}
+@media (max-width: 700px) {
+  #autores .brandon,
+  #autores .agatha,
+  #autores .robert,
+  #autores .juan {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    flex-direction: column;
+  }
+  #autores .brandon .info,
+  #autores .agatha .info,
+  #autores .robert .info,
+  #autores .juan .info {
+    display: none;
+  }
+  #autores .brandon img,
+  #autores .agatha img,
+  #autores .robert img,
+  #autores .juan img {
+    width: 300px;
+  }
+}
+
+#sagas {
+  gap: 20px;
+  padding: 20px 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#sagas .cosmere {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#sagas .disco {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#sagas .holmes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#sagas .potter {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 630px) {
+  #sagas {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #sagas img {
+    width: 300px;
+  }
+}
+
+#caminoReyes .infoLibro {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#caminoReyes .infoLibro p {
+  width: 35%;
+}
+#caminoReyes .generoRating {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+#caminoReyes .generoRating ul {
+  list-style-type: circle;
+}
+#caminoReyes .generoRating ul li {
+  font-weight: bold;
+}
+#caminoReyes .imagenesLibro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  #caminoReyes .infoLibro img {
+    max-width: 500px;
+  }
+}
+@media (max-width: 560px) {
+  #caminoReyes img {
+    width: 300px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  background-color: #ffc15e;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
