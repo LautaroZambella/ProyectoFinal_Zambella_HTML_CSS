@@ -81,9 +81,7 @@ main .toCenter {
   flex-direction: column;
   align-items: center;
   font-family: "Poppins", sans-serif;
-}
-main .toCenter h2 {
-  align-self: flex-start;
+  padding: 20px 0px 20px;
 }
 main .slider {
   max-width: 415px;
@@ -160,6 +158,9 @@ body #libros div {
   }
 }
 
+#autores a {
+  color: #586069;
+}
 #autores .brandon img {
   grid-area: img;
 }
@@ -406,11 +407,17 @@ body #libros div {
   justify-content: center;
 }
 @media (max-width: 992px) {
+  #caminoReyes p {
+    font-size: 25px;
+  }
   #caminoReyes .infoLibro img {
     max-width: 500px;
   }
 }
 @media (max-width: 560px) {
+  #caminoReyes p {
+    font-size: 25px;
+  }
   #caminoReyes img {
     width: 300px;
   }
